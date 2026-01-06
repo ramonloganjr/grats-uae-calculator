@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Grats - Free UAE Gratuity Calculator by Ramon Logan Jr.</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <meta name="description"
+        content="Grats by Ramon Logan Jr. is the UAE Gratuity Calculator designed specifically for Kabayan—empowering OFWs in the UAE with clarity, precision, and confidence in their end-of-service benefits.">
+    <meta name="keywords"
+        content="Grats, UAE gratuity calculator, Kabayan, OFW, Ramon Logan Jr., end-of-service benefits, UAE labor law, Filipino workers in UAE, salary calculator, expat tools, gratuity calculation, end of service, UAE labour law 2021">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Ramon Logan Jr.">
+    <meta name="creator" content="Ramon Logan Jr.">
+    <meta name="publisher" content="Grats by Ramon Logan Jr.">
+    <meta name="copyright" content="© 2025 Grats by Ramon Logan Jr. All Rights Reserved.">
+    <meta name="language" content="en">
+    <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="general">
+    <link rel="canonical" href="https://grats.ramonloganjr.com">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://api.exchangerate-api.io https://api.fxratesapi.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data:; connect-src 'self' https://api.exchangerate-api.io https://api.fxratesapi.com;">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://grats.ramonloganjr.com">
+    <meta property="og:title" content="Grats - Free UAE Gratuity Calculator by Ramon Logan Jr.">
+    <meta property="og:description"
+        content="Calculate your UAE end-of-service gratuity based on Federal Decree-Law No. 33 of 2021. Free, accurate, and compliant with UAE Labour Law.">
+    <meta property="og:image" content="https://grats.ramonloganjr.com/img/grats-og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="UAE Gratuity Calculator - Calculate your end-of-service benefits">
+    <meta property="og:site_name" content="Grats - Free UAE Gratuity Calculator by Ramon Logan Jr.">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:author" content="Ramon Logan Jr.">
+    <meta property="article:publisher" content="https://facebook.com/ramonloganjr">
+    <meta property="og:image:secure_url" content="https://grats.ramonloganjr.com/img/grats-og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://grats.ramonloganjr.com">
+    <meta name="twitter:title" content="Grats - UAE Gratuity Calculator by Ramon Logan Jr.">
+    <meta name="twitter:description"
+        content="Calculate your UAE end-of-service gratuity based on Federal Decree-Law No. 33 of 2021. Free, accurate, and compliant with UAE Labour Law.">
+    <meta name="twitter:image" content="https://grats.ramonloganjr.com/img/grats-og.png">
+    <meta name="twitter:image:alt" content="UAE Gratuity Calculator - Calculate your end-of-service benefits">
+    <meta name="twitter:creator" content="@ramonloganjr">
+    <meta name="twitter:site" content="@ramonloganjr">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Grats Calculator">
+    <meta name="application-name" content="Grats Calculator">
+    <meta name="msapplication-TileColor" content="#0071E3">
+    <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="color-scheme" content="light dark">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://api.exchangerate-api.io" crossorigin>
+    <link rel="dns-prefetch" href="https://api.fxratesapi.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #fff;
+            --text-primary: #1d1d1f
+        }
+
+        body:not(.light-mode) {
+            --bg-primary: #000;
+            --text-primary: #f5f5f7
+        }
+
+        body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: Inter, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            margin: 0
+        }
+
+        .theme-toggle {
+            width: 44px !important;
+            height: 44px !important;
+            min-width: 44px !important;
+            min-height: 44px !important;
+            max-width: 44px !important;
+            max-height: 44px !important;
+            border-radius: 50% !important;
+            aspect-ratio: 1/1 !important;
+            flex-shrink: 0 !important
+        }
+    </style>
+    <script>!function () { try { var e = localStorage.getItem("theme"); e || (e = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); var t = "light" === e ? "#FFFFFF" : "#000000"; document.documentElement.style.backgroundColor = t, document.querySelectorAll('meta[name="theme-color"]').forEach(function (e) { e.setAttribute("content", t), e.removeAttribute("media") }) } catch (e) { } }()</script>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" as="style"
+        onload='this.onload=null,this.rel="stylesheet"'><noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+    </noscript>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="application/ld+json">{
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Grats - UAE Gratuity Calculator",
+        "alternateName": "UAE Gratuity Calculator by Ramon Logan Jr.",
+        "description": "Calculate your UAE end-of-service gratuity based on Federal Decree-Law No. 33 of 2021. Free, accurate, and compliant with UAE Labour Law.",
+        "url": "https://grats.ramonloganjr.com",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Ramon Logan Jr.",
+            "url": "https://ramonloganjr.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "GRÁTS",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://grats.ramonloganjr.com/img/logo.svg"
+            }
+        },
+        "dateCreated": "2024-01-01",
+        "dateModified": "2026-01-06",
+        "inLanguage": "en",
+        "keywords": "UAE gratuity calculator, end-of-service benefits, UAE labor law, salary calculator, OFW tools",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "150"
+        },
+        "featureList": [
+            "Calculate UAE gratuity based on UAE Labour Law",
+            "Support for limited and unlimited contracts",
+            "Real-time currency conversion to PHP",
+            "Scenario comparison (resignation vs termination)",
+            "Year-by-year breakdown",
+            "PDF export functionality",
+            "Dark/Light theme support"
+        ]
+    }</script>
+</head>
+
+<body>
+    <script>!function () { try { var e = localStorage.getItem("theme"); e || (e = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"), "light" === e ? document.body.classList.add("light-mode") : document.body.classList.remove("light-mode"), document.documentElement.style.colorScheme = e } catch (e) { } }()</script>
+    <header class="header">
+        <div class="container"><a href="/" class="logo" aria-label="Grats - Home"><img src="img/logo.svg"
+                    alt="Grats Logo" class="logo-image" width="140" height="44" loading="eager"> </a><button
+                id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"><i
+                    class="bi bi-sun theme-icon theme-icon-light" aria-hidden="true"></i> <i
+                    class="bi bi-moon theme-icon theme-icon-dark" aria-hidden="true"></i></button></div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="hero" aria-labelledby="hero-title">
+                <h1 id="hero-title" class="hero-title">Calculate Your UAE Gratuity</h1>
+                <p class="hero-subtitle">Professional end-of-service gratuity calculator based on UAE Federal Decree-Law
+                    No. 33 of 2021</p>
+            </section>
+            <section class="calculator" aria-labelledby="calculator-title">
+                <div class="card calculator-card">
+                    <header class="card-header">
+                        <h2 id="calculator-title" class="card-title"><i class="bi bi-calculator" aria-hidden="true"></i>
+                            Calculate Your Gratuity</h2>
+                        <p class="card-subtitle">Enter your employment details for an accurate calculation</p>
+                    </header>
+                    <form class="calculator-form" id="calculator-form" novalidate>
+                        <div class="form-grid">
+                            <div class="form-group"><label for="basic-salary" class="form-label"><img
+                                        src="img/dirham.svg" alt="AED" class="currency-symbol"> Basic Salary</label>
+                                <input type="number" id="basic-salary" class="form-input"
+                                    placeholder="Enter basic salary" min="0" step="0.01" required
+                                    aria-describedby="basic-salary-help" inputmode="decimal"> <small
+                                    id="basic-salary-help" class="form-help">Only basic salary is considered (excludes
+                                    allowances)</small>
+                            </div>
+                            <div class="form-group"><label for="contract-type" class="form-label"><i
+                                        class="bi bi-file-earmark-text" aria-hidden="true"></i> Contract Type</label>
+                                <select id="contract-type" class="form-select" required
+                                    aria-describedby="contract-type-help">
+                                    <option value="">Select Contract Type</option>
+                                    <option value="limited">Limited Contract</option>
+                                    <option value="unlimited">Unlimited Contract</option>
+                                </select> <small id="contract-type-help" class="form-help">Choose your employment
+                                    contract type</small>
+                            </div>
+                            <div class="form-group"><label for="start-date" class="form-label"><i class="bi bi-calendar"
+                                        aria-hidden="true"></i> Employment Start Date</label> <input type="date"
+                                    id="start-date" class="form-input" required aria-describedby="start-date-help">
+                                <small id="start-date-help" class="form-help">Date you started working</small>
+                            </div>
+                            <div class="form-group"><label for="end-date" class="form-label"><i class="bi bi-calendar-x"
+                                        aria-hidden="true"></i> Employment End Date</label> <input type="date"
+                                    id="end-date" class="form-input" required aria-describedby="end-date-help"> <small
+                                    id="end-date-help" class="form-help">Date your employment ends</small></div>
+                            <div class="form-group"><label for="departure-reason" class="form-label"><i
+                                        class="bi bi-person-x" aria-hidden="true"></i> Reason for Leaving</label>
+                                <select id="departure-reason" class="form-select" required
+                                    aria-describedby="departure-reason-help">
+                                    <option value="">Select Reason</option>
+                                    <option value="termination">Termination by Employer</option>
+                                    <option value="resignation">Resignation</option>
+                                    <option value="contract-end">Contract End</option>
+                                </select> <small id="departure-reason-help" class="form-help">How your employment will
+                                    end</small>
+                            </div>
+                            <div class="form-group"><label for="unpaid-leave" class="form-label"><i
+                                        class="bi bi-pause-circle" aria-hidden="true"></i> Unpaid Leave Days</label>
+                                <input type="number" id="unpaid-leave" class="form-input" placeholder="0" min="0"
+                                    value="0" aria-describedby="unpaid-leave-help" inputmode="numeric"> <small
+                                    id="unpaid-leave-help" class="form-help">Days without pay are deducted from service
+                                    period</small>
+                            </div>
+                            <div class="form-group"><label for="nationality" class="form-label"><i class="bi bi-globe"
+                                        aria-hidden="true"></i> Nationality</label> <select id="nationality"
+                                    class="form-select" required aria-describedby="nationality-help">
+                                    <option value="">Select Nationality</option>
+                                    <option value="IN" data-currency="INR" data-symbol="₹">India (INR)</option>
+                                    <option value="PK" data-currency="PKR" data-symbol="₨">Pakistan (PKR)</option>
+                                    <option value="PH" data-currency="PHP" data-symbol="₱">Philippines (PHP)</option>
+                                    <option value="BD" data-currency="BDT" data-symbol="৳">Bangladesh (BDT)</option>
+                                    <option value="EG" data-currency="EGP" data-symbol="£">Egypt (EGP)</option>
+                                    <option value="NP" data-currency="NPR" data-symbol="Rs">Nepal (NPR)</option>
+                                    <option value="LK" data-currency="LKR" data-symbol="Rs">Sri Lanka (LKR)</option>
+                                    <option value="JO" data-currency="JOD" data-symbol="د.ا">Jordan (JOD)</option>
+                                    <option value="SY" data-currency="SYP" data-symbol="£">Syria (SYP)</option>
+                                    <option value="YE" data-currency="YER" data-symbol="﷼">Yemen (YER)</option>
+                                    <option value="LB" data-currency="LBP" data-symbol="ل.ل">Lebanon (LBP)</option>
+                                    <option value="SD" data-currency="SDG" data-symbol="ج.س">Sudan (SDG)</option>
+                                    <option value="IR" data-currency="IRR" data-symbol="﷼">Iran (IRR)</option>
+                                    <option value="AF" data-currency="AFN" data-symbol="؋">Afghanistan (AFN)</option>
+                                    <option value="ET" data-currency="ETB" data-symbol="Br">Ethiopia (ETB)</option>
+                                    <option value="TH" data-currency="THB" data-symbol="฿">Thailand (THB)</option>
+                                    <option value="ID" data-currency="IDR" data-symbol="Rp">Indonesia (IDR)</option>
+                                    <option value="MY" data-currency="MYR" data-symbol="RM">Malaysia (MYR)</option>
+                                    <option value="KE" data-currency="KES" data-symbol="KSh">Kenya (KES)</option>
+                                    <option value="UG" data-currency="UGX" data-symbol="USh">Uganda (UGX)</option>
+                                    <option value="GH" data-currency="GHS" data-symbol="₵">Ghana (GHS)</option>
+                                    <option value="NG" data-currency="NGN" data-symbol="₦">Nigeria (NGN)</option>
+                                    <option value="US" data-currency="USD" data-symbol="$">United States (USD)</option>
+                                    <option value="GB" data-currency="GBP" data-symbol="£">United Kingdom (GBP)</option>
+                                    <option value="CA" data-currency="CAD" data-symbol="$">Canada (CAD)</option>
+                                    <option value="AU" data-currency="AUD" data-symbol="$">Australia (AUD)</option>
+                                    <option value="FR" data-currency="EUR" data-symbol="€">France (EUR)</option>
+                                    <option value="DE" data-currency="EUR" data-symbol="€">Germany (EUR)</option>
+                                    <option value="IT" data-currency="EUR" data-symbol="€">Italy (EUR)</option>
+                                    <option value="ES" data-currency="EUR" data-symbol="€">Spain (EUR)</option>
+                                    <option value="ZA" data-currency="ZAR" data-symbol="R">South Africa (ZAR)</option>
+                                    <option value="CN" data-currency="CNY" data-symbol="¥">China (CNY)</option>
+                                    <option value="JP" data-currency="JPY" data-symbol="¥">Japan (JPY)</option>
+                                    <option value="KR" data-currency="KRW" data-symbol="₩">South Korea (KRW)</option>
+                                    <option value="RU" data-currency="RUB" data-symbol="₽">Russia (RUB)</option>
+                                    <option value="TR" data-currency="TRY" data-symbol="₺">Turkey (TRY)</option>
+                                </select> <small id="nationality-help" class="form-help">Select your nationality for
+                                    currency conversion</small></div>
+                            <div class="form-group"><label for="sector" class="form-label"><i class="bi bi-building"
+                                        aria-hidden="true"></i> Sector</label> <select id="sector" class="form-select"
+                                    required aria-describedby="sector-help">
+                                    <option value="">Select Sector</option>
+                                    <option value="public">Public Sector</option>
+                                    <option value="private">Private Sector</option>
+                                </select> <small id="sector-help" class="form-help">Choose your employment
+                                    sector</small></div>
+                            <div class="form-group"><label for="industry" class="form-label"><i class="bi bi-briefcase"
+                                        aria-hidden="true"></i> Industry</label> <select id="industry"
+                                    class="form-select" required aria-describedby="industry-help">
+                                    <option value="">Select Industry</option>
+                                    <option value="oil-gas">Oil & Gas</option>
+                                    <option value="petrochemicals">Petrochemicals</option>
+                                    <option value="construction">Construction</option>
+                                    <option value="real-estate">Real Estate</option>
+                                    <option value="architecture-engineering">Architecture & Engineering</option>
+                                    <option value="banking">Banking & Finance</option>
+                                    <option value="insurance">Insurance</option>
+                                    <option value="investment">Investment & Securities</option>
+                                    <option value="information-technology">Information Technology</option>
+                                    <option value="telecommunications">Telecommunications</option>
+                                    <option value="fintech">FinTech</option>
+                                    <option value="healthcare">Healthcare & Medical</option>
+                                    <option value="pharmaceuticals">Pharmaceuticals</option>
+                                    <option value="aviation">Aviation</option>
+                                    <option value="logistics">Logistics & Supply Chain</option>
+                                    <option value="transportation">Transportation</option>
+                                    <option value="maritime">Maritime & Shipping</option>
+                                    <option value="hospitality">Hospitality & Hotels</option>
+                                    <option value="tourism">Tourism & Travel</option>
+                                    <option value="restaurants">Restaurants & Food Service</option>
+                                    <option value="retail">Retail</option>
+                                    <option value="wholesale">Wholesale Trade</option>
+                                    <option value="e-commerce">E-commerce</option>
+                                    <option value="manufacturing">Manufacturing</option>
+                                    <option value="automotive">Automotive</option>
+                                    <option value="textiles">Textiles & Apparel</option>
+                                    <option value="education">Education</option>
+                                    <option value="training">Training & Development</option>
+                                    <option value="media">Media & Broadcasting</option>
+                                    <option value="advertising">Advertising & Marketing</option>
+                                    <option value="entertainment">Entertainment</option>
+                                    <option value="government">Government</option>
+                                    <option value="public-services">Public Services</option>
+                                    <option value="defense">Defense & Security</option>
+                                    <option value="legal">Legal Services</option>
+                                    <option value="consulting">Consulting</option>
+                                    <option value="accounting">Accounting & Auditing</option>
+                                    <option value="agriculture">Agriculture</option>
+                                    <option value="food-beverage">Food & Beverage</option>
+                                    <option value="renewable-energy">Renewable Energy</option>
+                                    <option value="utilities">Utilities</option>
+                                    <option value="sports">Sports & Recreation</option>
+                                    <option value="fitness">Fitness & Wellness</option>
+                                    <option value="non-profit">Non-Profit Organizations</option>
+                                    <option value="other">Other</option>
+                                </select> <small id="industry-help" class="form-help">Select your industry
+                                    sector</small></div>
+                        </div><button type="submit" id="calculate-btn" class="btn btn-primary"><i
+                                class="bi bi-calculator" aria-hidden="true"></i> Calculate Gratuity</button>
+                    </form>
+                </div>
+            </section>
+            <section class="results" id="results" style="display:none" aria-live="polite" role="region"
+                aria-label="Calculation Results">
+                <div class="card results-card">
+                    <header class="card-header">
+                        <h2 class="card-title"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i> Your Gratuity
+                            Calculation</h2>
+                    </header>
+                    <div class="results-content">
+                        <div class="amount-display">
+                            <div class="amount-primary"><span class="amount-label">Estimated Gratuity</span> <span
+                                    class="amount-value" id="gratuity-amount"><img src="img/dirham.svg" alt="AED"
+                                        class="currency-symbol"> 0</span></div>
+                            <div class="amount-secondary"><span class="amount-conversion" id="gratuity-amount-php">≈ ₱ 0
+                                    PHP</span>
+                                <div class="exchange-rate-info"><span class="exchange-rate-label">Exchange Rate:</span>
+                                    <span class="exchange-rate-value" id="exchange-rate-display">1 AED = ₱ 0.00
+                                        PHP</span> <span class="exchange-rate-updated" id="exchange-rate-updated">Last
+                                        updated: --</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculation-breakdown" id="calculation-breakdown"></div>
+                        <div class="scenario-comparison" id="scenario-comparison"></div>
+                        <div class="annual-breakdown" id="annual-breakdown">
+                            <h3 class="breakdown-title">Year-by-Year Breakdown</h3>
+                            <div class="annual-breakdown-table" id="annual-breakdown-table"></div>
+                        </div>
+                        <div class="result-actions">
+                            <div class="export-controls"><button class="btn btn-secondary" id="pdf-export-btn"
+                                    aria-label="Export to PDF"><i class="bi bi-file-earmark-text"
+                                        aria-hidden="true"></i> <span class="btn-text">Export PDF</span></button>
+                                <button class="btn btn-outline" id="reset-btn" aria-label="Calculate Again"><i
+                                        class="bi bi-arrow-clockwise" aria-hidden="true"></i> <span
+                                        class="btn-text">Calculate Again</span></button>
+                            </div>
+                            <div class="export-status" id="export-status" style="display:none">
+                                <div class="status-message" id="status-message"><i class="bi bi-check-circle"></i>
+                                    <span>Export completed successfully!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="disclaimer" aria-labelledby="disclaimer-title">
+                <div class="card disclaimer-card">
+                    <header class="card-header">
+                        <h3 id="disclaimer-title" class="card-title"><i class="bi bi-exclamation-triangle"
+                                aria-hidden="true"></i> Important Legal Notes</h3>
+                    </header>
+                    <div class="disclaimer-content">
+                        <p>This calculator provides an estimate based on UAE Federal Decree-Law No. 33 of 2021. Actual
+                            gratuity may vary based on:</p>
+                        <ul>
+                            <li><strong>Unpaid Leave:</strong> Days without pay are excluded from service duration</li>
+                            <li><strong>Deductions:</strong> Employers may deduct loans, damages, or legally owed
+                                amounts</li>
+                            <li><strong>Gross Misconduct:</strong> Dismissal under Article 120 may forfeit gratuity
+                                entitlement</li>
+                            <li><strong>Contract Legacy:</strong> Older contracts may fall under pre-2022 provisions
+                            </li>
+                        </ul>
+                        <p class="disclaimer-note"><i class="bi bi-info-circle" aria-hidden="true"></i> <span>This tool
+                                provides informational estimates only and does not constitute legal advice. For official
+                                rulings, consult MoHRE or a qualified legal professional.</span></p>
+                        <p class="disclaimer-source"><small><em>* Expatriate demographic data sourced from UAE Ministry
+                                    of Human Resources and Emiratisation (MoHRE) 2024 Annual Labor Market Report and
+                                    Federal Authority for Identity, Citizenship, Customs & Port Security (ICP)
+                                    statistics.</em></small></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-text">Grats by Ramon Logan Jr. © 2025. All Rights Reserved.</p>
+                    <p class="footer-subtext">Free UAE Gratuity Calculator for Your End-of-Service Entitlements.</p>
+                </div>
+                <nav class="footer-links" aria-label="Social links"><a href="https://www.linkedin.com/in/ramon-logan-jr"
+                        aria-label="Visit Ramon's LinkedIn Profile" class="footer-link" target="_blank"
+                        rel="noopener noreferrer"><i class="bi bi-linkedin" aria-hidden="true"></i> </a><a
+                        href="https://github.com/ramonloganjr" aria-label="Visit Ramon's GitHub Profile"
+                        class="footer-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"
+                            aria-hidden="true"></i> </a><a href="https://www.ramonloganjr.com/"
+                        aria-label="Visit Ramon's Website" class="footer-link" target="_blank"
+                        rel="noopener noreferrer"><i class="bi bi-globe" aria-hidden="true"></i></a></nav>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer="defer"></script>
+    <script src="js/protection.js" defer="defer"></script>
+    <script src="js/script.js" defer="defer"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+# UAE Gratuity Calculator - Robots.txt
+# https://grats.ramonloganjr.com/robots.txt
+
+User-agent: *
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /img/
+Disallow: /js/protection.js
+Disallow: *.map
+Disallow: /tmp/
+Disallow: /backup/
+
+# Major Search Engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Block unwanted bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+# Sitemap
+Sitemap: https://grats.ramonloganjr.com/sitemap.xml
+
+# Crawl-delay for general bots
+Crawl-delay: 1
+
+# Additional directives
+Request-rate: 1/2s
+Visit-time: 0600-2300 
