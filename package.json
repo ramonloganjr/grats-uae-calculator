@@ -1,0 +1,17 @@
+{
+  "name": "grats-uae-gratuity-calculator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Free UAE end-of-service gratuity calculator based on Federal Decree-Law No. 33 of 2021.",
+  "scripts": {
+    "build": "node build.js",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
+  },
+  "author": "Ramon Logan Jr.",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css": "^5.3.3",
+    "html-minifier-terser": "^7.2.0",
+    "terser": "^5.31.0"
+  }
+}
