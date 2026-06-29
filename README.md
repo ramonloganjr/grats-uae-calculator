@@ -302,7 +302,7 @@ For official determinations, consult the Ministry of Human Resources and Emirati
 
 |  |  |
 |--|--|
-| <img src="https://img.shields.io/badge/Email-1877F2?style=flat&logo=gmail&logoColor=white" height="20" /> | [iam@ramonloganjr.com](mailto:iam@ramonloganjr.com) |
+| <img src="https://img.shields.io/badge/Email-1877F2?style=flat&logo=gmail&logoColor=white" height="20" /> | [hello@ramonloganjr.com](mailto:hello@ramonloganjr.com) |
 | <img src="https://img.shields.io/badge/Website-1877F2?style=flat&logo=googlechrome&logoColor=white" height="20" /> | [www.ramonloganjr.com](https://www.ramonloganjr.com) |
 | <img src="https://img.shields.io/badge/LinkedIn-1877F2?style=flat&logo=linkedin&logoColor=white" height="20" /> | [linkedin.com/in/ramon-logan-jr](https://www.linkedin.com/in/ramon-logan-jr/) |
 | <img src="https://img.shields.io/badge/GitHub-1877F2?style=flat&logo=github&logoColor=white" height="20" /> | [github.com/ramonloganjr](https://github.com/ramonloganjr) |
